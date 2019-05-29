@@ -1,11 +1,11 @@
 {
   "name": "angular2-image-upload",
-  "version": "1.0.0-rc.0",
+  "version": "1.0.0",
   "description": "An angular component that uploads images using native browser upload or drag-n-drop.",
   "main": "index.js",
   "scripts": {
     "build": "rm -rf lib .tmp demo/src/lib && gulp build",
-    "release": "npm run build && npm run build:demo && git add docs && standard-version --commit-all",
+    "release": "npm run build && standard-version --commit-all",
     "publish": "git push --follow-tags origin master && npm publish",
     "install:demo": "cd demo && yarn",
     "demo": "cd demo && npm start",
@@ -41,6 +41,7 @@
     "rxjs": "^5.0.0-rc.2"
   },
   "devDependencies": {
+    "@angular/cli": "1.4.9",
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
     "@angular/compiler-cli": "^4.0.0",
@@ -48,7 +49,7 @@
     "@angular/http": "^4.0.0",
     "@angular/language-service": "^4.0.0",
     "@types/core-js": "^0.9.34",
-    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp": "4.0.0",
     "gulp-inline-ng2-template": "^4.0.0",
     "gulp-ngc": "^0.3.2",
     "rxjs": "^5.0.0-rc.2",

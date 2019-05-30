@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "rm -rf lib .tmp demo/src/lib && gulp build",
-    "release": "npm run build && standard-version --commit-all",
+    "release": "npm run build",
     "publish": "git push --follow-tags origin master && npm publish",
     "install:demo": "cd demo && yarn",
     "demo": "cd demo && npm start",
